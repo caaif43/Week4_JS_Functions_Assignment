@@ -1,17 +1,21 @@
-console.log("=== Task 1: greetUser ===");
-console.log(greetUser("Fatuma"));   // → "Hello, Fatuma!"
-console.log(greetUser("Asha"));     // → "Hello, Asha!"
+// Task 1 — Greet User
+function greetUser(name) {
+  return "Hello, " + name + "!";
+}
 
-console.log("\n=== Task 2: calculateTip ===");
-console.log(calculateTip(50, 20));  // → 10
-console.log(calculateTip(80, 15));  // → 12
+// Task 2 — Tip Calculator
+function calculateTip(bill, tipPercent) {
+  return bill * (tipPercent / 100);
+}
 
-console.log("\n=== Task 3: celsiusToFahrenheit ===");
-console.log(celsiusToFahrenheit(0));    // → 32
-console.log(celsiusToFahrenheit(100));  // → 212
-console.log(celsiusToFahrenheit(25));   // → 77
+// Task 3 — Celsius to Fahrenheit
+function celsiusToFahrenheit(c) {
+  return (c * 9) / 5 + 32;
+}
 
-console.log("\n=== Task 4: isAdult ===");
-console.log(isAdult(20));    // → true
-console.log(isAdult(15));    // → false
-console.log(isAdult(18));       // → true
+// Task 4 — Is Adult? (Arrow Function)
+const isAdult = (age) => age >= 18;
+
+function getInitials(firstName, lastName) {
+  return firstName[0] + "." + lastName[0] + ".";
+}
